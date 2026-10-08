@@ -1,0 +1,92 @@
+\RequirePackage{silence}
+\WarningsOff % Turn off all warnings from all packages
+\ErrorsOff   % (Caution) Use only if you are sure the code has no severe logic errors
+
+\documentclass[a4paper,14pt, twoside]{memoir}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}    
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amsthm}         % Provides proof environment
+\usepackage{amssymb}
+\usepackage{mathtools}     % Includes amsmath but optimized and with more features
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{autobreak}
+\usepackage{array}          % Support for notation table formatting
+\usepackage{booktabs}       % Professional table rules
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,
+	urlcolor=cyan
+}
+
+% Theorem Environments (Đánh số theo Chapter)
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{md}{Proposition}[chapter]
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+\newtheorem{example}{Example}[chapter]
+
+% Declare Math Operators
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\setu}{s}
+\DeclareMathOperator{\dimU}{\dim}
+\DeclareMathOperator{\w}{w}
+\DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\pr}{pr}
+\DeclareMathOperator{\pgr}{pgr}
+\DeclareMathOperator{\scale}{scale}
+\DeclareMathOperator{\rad}{rad}
+\DeclareMathOperator{\Val}{Val}
+\DeclareMathOperator{\Conf}{Conf}
+
+% Custom commands
+\newcommand{\set}[1]{\left\{#1\right\}} % set
+\newcommand{\tbd}[1]{\mathcal{#1}} % uncertain set
+\newcommand{\s}[1]{\set{#1}_\mathrm{u}} % uncertain number
+\newcommand{\kbd}[1]{{#1}_\mathrm{u}} % uncertain interval
+\newcommand{\bd}[1]{\left(#1\right)_\mathrm{u}} % uncertain expression
+\newcommand{\tsbd}[1]{\mathbf{U}(\mathbb{#1})}
+\newcommand{\tsbdcapn}[2]{\mathbf{U^{#2}}(\mathbb{#1})}
+\newcommand{\tsbdts}[1]{\mathbf{U}_{\w}(\mathbb{#1})} % set of uncertain numbers
+\newcommand{\ddclmd}{\mathcal{V}} % truth measure of a proposition
+\newcommand{\ts}[1]{\w_{#1}} % Weight
+\newcommand{\gtcl}[2]{\left(#1\right)_{#2}} % truth measure
+\newcommand{\gr}[1]{\text{gr}(#1)} % graph of a function
+\newcommand{\hpw}[2]{#1_1\left(#2\right)} % point-wise function
+\newcommand{\hbd}[2]{#1_m\left(#2\right)} % uncertain function
+\newcommand{\eq}[1]{\left[#1\right]_{eq}} % eqs operator
+\newcommand{\kgdd}[1]{\left(#1\right)_1} % pointwise operator
+\newcommand{\kgddmr}[1]{\left(#1\right)_{1'}} % real operator
+\newcommand{\kgdt}[1]{\left(#1\right)_m} % pointwise operator
+\newcommand{\kgdtmr}[1]{\left(#1\right)_{m'}} % pointwise operator
+
+\title{\textbf{Uncertain Compression Algorithm}}
+\author{
+	Tran Manh Cuong\thanks{Email: \href{mailto:tmcuong2408@gmail.com}{tmcuong2408@gmail.com} | Phone: 0353237140} \\[0.5em]
+	\small Alumnus of Faculty of Mathematics and Informatics (K11)
+	\\ Thai Nguyen University of Sciences \\
+	\small Address: DJ7 Street, Thoi Hoa, Ho Chi Minh City, Vietnam \\
+	\small \textit{Research Field: Mathematics of Uncertainty}
+}
+\date{Last updated: \today}
+
+\begin{document}
+	
+	\maketitle
+	
+	
+	\begin{thebibliography}{99}
+		\bibitem{Tran2026}
+		Tran, M. C. (2026). \textit{Extended Logic and Mathematics of Uncertainty}. Zenodo. DOI:
+		\href{https://doi.org/10.5281/zenodo.22031881}{10.5281/zenodo.22031881}
+	\end{thebibliography}
+\end{document}
