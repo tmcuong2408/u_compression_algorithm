@@ -80,38 +80,38 @@
 \date{Last updated: \today}
 
 \begin{document}
-	
-	\maketitle
-	
-	\chapter{Point Interpolation in Uncertainty Analysis}
-	
-	In this chapter, we formally introduce point interpolation within the setting of uncertain analysis. An uncertain number $A$ is represented in normalized canonical form by its underlying scenario tuple $(f_A, d_A)$, where $f_A$ is the generator function defined over the index domain $d_A$.
-	
-	\begin{definition}[Point Interpolation as a Transform Operator]
-		Let $A \sim (f_A, d_A)$ be a given uncertain number and let $B \sim (f_B, d_B)$ be a target uncertain specification. The problem of point interpolation consists of determining a functional transformation operator $f$ such that:
-		\begin{equation}
-			f(A) = B
-		\end{equation}
-		Under the scenario representation, $f$ acts as a transform operator $\mathcal{T}_f$ acting directly on the generator function $f_A$, yielding:
-		\begin{equation}
-			\mathcal{T}_f : f_A \mapsto f_{f(A)} \equiv f_B
-		\end{equation}
-		thereby mapping the scenario profile $(f_A, d_A)$ directly into $(f_B, d_B)$.
-	\end{definition}
-	
-	
-	\chapter{Data Compression Algorithm Using Point Interpolation in Analysis of Uncertainty}
-	
-	Building upon the point interpolation transform operator $\mathcal{T}_f$ defined in Chapter 1, we formulate a data compression scheme for uncertain data structures.
-	
-	\section{Algorithmic Formulation}
-	
-	
-	
-	\begin{thebibliography}{99}
-		\bibitem{Tran2026}
-		Tran, M. C. (2026). \textit{Extended Logic and Mathematics of Uncertainty}. Zenodo. DOI:
-		\href{https://doi.org/10.5281/zenodo.22031881}{10.5281/zenodo.22031881}
-	\end{thebibliography}
-	
+
+\maketitle
+
+\chapter{Point Interpolation in Uncertainty Analysis}
+
+In this chapter, we formally introduce point interpolation within the setting of uncertain analysis. An uncertain number $A$ is represented in normalized canonical form by its underlying scenario tuple $(f_A, d_A)$, where $f_A$ is the generator function defined over the index domain $d_A$.
+
+\begin{definition}[Point Interpolation as a Transform Operator]
+	Let $A \sim (f_A, d_A)$ be a given uncertain number and let $B \sim (f_B, d_B)$ be a target uncertain specification. The problem of point interpolation consists of determining a functional transformation operator $f$ such that:
+	\begin{equation}
+		f(A) = B
+	\end{equation}
+	Under the scenario representation, $f$ acts as a transform operator $\mathcal{T}_f$ acting directly on the generator function $f_A$, yielding:
+	\begin{equation}
+		\mathcal{T}_f : f_A \mapsto f_{f(A)} \equiv f_B
+	\end{equation}
+	thereby mapping the scenario profile $(f_A, d_A)$ directly into $(f_B, d_B)$.
+\end{definition}
+
+
+\chapter{Data Compression Algorithm Using Point Interpolation in Analysis of Uncertainty}
+
+Building upon the point interpolation transform operator $\mathcal{T}_f$ defined in Chapter 1, we formulate a data compression scheme for uncertain data structures.
+
+\section{Algorithmic Formulation}
+
+
+
+\begin{thebibliography}{99}
+	\bibitem{Tran2026}
+	Tran, M. C. (2026). \textit{Extended Logic and Mathematics of Uncertainty}. Zenodo. DOI:
+	\href{https://doi.org/10.5281/zenodo.22031881}{10.5281/zenodo.22031881}
+\end{thebibliography}
+
 \end{document}
